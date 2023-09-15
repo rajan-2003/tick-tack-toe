@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick Tack Toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #24243e;
+        }
+        .main{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            display: flex;
+        }
+        .col{
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            background-color: #FAF9F6;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        #winnerMssg{
+            color: #F5D67B;
+            font-size: 1.85rem;
+            font-weight: 750;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #btnDiv{
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            color: rgb(163, 28, 175);
+            font-size: 2rem;
+            font-weight: 800;
+            background-color:#FAF9F6;
+            padding: 10px;
+            margin-top:50px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+            display: none;
+        }
+        #btn:hover{
+            color: rgb(224, 118, 25);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="cont" class="container">
+            <div class="row">
+                <div id="0" class="col"></div>
+                <div id="1" class="col"></div>
+                <div id="2" class="col"></div>
+            </div>
+            <div class="row">
+                <div id="3" class="col"></div>
+                <div id="4" class="col"></div>
+                <div id="5" class="col"></div>
+            </div>
+            <div class="row">
+                <div id="6" class="col"></div>
+                <div id="7" class="col"></div>
+                <div id="8" class="col"></div>
+            </div>
+            <div id="winnerMssg"></div>
+            <div id="btnDiv">
+                <button id="btn">Replay</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
