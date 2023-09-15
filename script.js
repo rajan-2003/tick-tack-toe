@@ -49,6 +49,13 @@ cont.addEventListener("click", (event) => {
   }
 })
 
-button.addEventListener("click",()=>{
-    window.location.reload();
-})
+button.addEventListener("click", () => {
+  winnerFound = false;
+  arr.fill(null);
+  winnerMessage.innerText = "";
+  document.querySelectorAll(".col").forEach((cell) => {
+    cell.innerText = "";
+  });
+  currPlayer = "X";
+  button.style.display="none";
+});
